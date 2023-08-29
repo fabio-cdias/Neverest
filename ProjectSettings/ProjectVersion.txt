@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-m_EditorVersion: 2022.3.7f1
-m_EditorVersionWithRevision: 2022.3.7f1 (b16b3b16c7a0)
-=======
 m_EditorVersion: 2022.3.8f1
 m_EditorVersionWithRevision: 2022.3.8f1 (b5eafc012955)
->>>>>>> 121be0f (Empty project-Unity version changed to 2022.3.8f1)
