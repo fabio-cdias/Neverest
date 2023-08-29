@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
+<<<<<<< HEAD
   productGUID: 8d35ee15aff7ec629afcdbb80d1e6891
+=======
+  productGUID: 96ab70d142f321e47ae9635f5ba63e80
+>>>>>>> 121be0f (Empty project-Unity version changed to 2022.3.8f1)
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -86,6 +90,10 @@ PlayerSettings:
   hideHomeButton: 0
   submitAnalytics: 1
   usePlayerLog: 1
+<<<<<<< HEAD
+=======
+  dedicatedServerOptimizations: 0
+>>>>>>> 121be0f (Empty project-Unity version changed to 2022.3.8f1)
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
   useFlipModelSwapchain: 1
@@ -125,6 +133,10 @@ PlayerSettings:
   switchNVNMaxPublicTextureIDCount: 0
   switchNVNMaxPublicSamplerIDCount: 0
   switchNVNGraphicsFirmwareMemory: 32
+<<<<<<< HEAD
+=======
+  switchMaxWorkerMultiple: 8
+>>>>>>> 121be0f (Empty project-Unity version changed to 2022.3.8f1)
   stadiaPresentMode: 0
   stadiaTargetFramerate: 0
   vulkanNumSwapchainBuffers: 3
@@ -746,11 +758,19 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
+<<<<<<< HEAD
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: 
   organizationId: 
+=======
+  cloudProjectId: 2804159c-c100-4b5f-addd-c6b18325309d
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: NeverRest
+  organizationId: fabiodias
+>>>>>>> 121be0f (Empty project-Unity version changed to 2022.3.8f1)
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
