@@ -3255,7 +3255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1978696288453195400}
   m_Layer: 0
-  m_Name: Platform-Pattern
+  m_Name: PlatformPattern-Custom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
