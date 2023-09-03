@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Animator anim;
+    public Animator anim;
 
     void Start()
     {
@@ -15,14 +15,24 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        bool w_press = Input.GetKey("w");
-        bool isJogging = anim.GetBool("isJogging");
-        Debug.Log(isJogging);
-        if (w_press && !isJogging){
-            anim.SetBool("isJogging",true);
+        bool w_press = Input.GetKey(KeyCode.W);
+        bool shift_press = Input.GetKey(KeyCode.LeftShift);
+        bool isRunning = anim.GetBool("isRunning");
+        bool isSprinting = anim.GetBool("isSprinting");
+        Debug.Log(isRunning);
+        Debug.Log(isSprinting);
+
+        if (w_press && !isRunning){
+            anim.SetBool("isRunning",true);
+            if (shift_press && !isSprinting){
+                anim.SetBool("isSprinting",true);
+            }
         }
-        if (!w_press && isJogging){
-            anim.SetBool("isJogging",false);
+        if (!w_press && isRunning){
+            anim.SetBool("isRunning",false);
+            if  (!shift_press && isSprinting){
+                anim.SetBool("isSprinting",false);
+            }
         }
     }
 }
