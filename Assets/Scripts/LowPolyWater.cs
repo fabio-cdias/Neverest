@@ -51,6 +51,7 @@ namespace LowPolyWater
                 triangles[i] = i;
             }
 
+
             //Update the gameobject's mesh with new vertices
             mesh.vertices = vertices;
             mesh.SetTriangles(triangles, 0);
