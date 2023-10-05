@@ -401,6 +401,8 @@ GameObject:
   - component: {fileID: 68471603}
   - component: {fileID: 68471602}
   - component: {fileID: 68471606}
+  - component: {fileID: 68471608}
+  - component: {fileID: 68471607}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -500,6 +502,44 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &68471607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68471599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb12c1c1fceaacc43a8155947cc30e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 68471606}
+  input: {fileID: 68471608}
+  mouseDirection: {x: 0, y: 0}
+  inputDirection: {x: 0, y: 0, z: 0}
+  currentDirection: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  isMovement: 0
+  gravity: 9.81
+  gravityMultiplier: 5
+  acceleration: 100
+  deceleration: 150
+  maxVelocity: 10
+--- !u!114 &68471608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68471599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db15778d859805367807cf5abad912db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump: 32
+  run: 304
 --- !u!1 &386635068
 GameObject:
   m_ObjectHideFlags: 0

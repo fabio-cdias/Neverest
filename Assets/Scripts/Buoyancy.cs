@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 public class Buoyancy : MonoBehaviour {
 
+
     //Private vars
     private Vector3 center;
     private Transform currentWaterTransform;
