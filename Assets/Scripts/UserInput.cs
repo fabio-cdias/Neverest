@@ -8,7 +8,7 @@ public class UserInput : MonoBehaviour
     public KeyCode run = KeyCode.LeftShift;
 
     public Vector3 Direction(){
-        return new Vector3 (Input.GetAxis("Horizontal"),0,Input.GetAxis("Vertical"));
+        return new Vector2 (Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
     }
     public Vector2 mouseAxis(){
         return new Vector2 (Input.GetAxis("Mouse X"),Input.GetAxis("Mouse Y"));
