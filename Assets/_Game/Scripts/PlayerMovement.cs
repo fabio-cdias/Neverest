@@ -16,17 +16,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float verticalVelocity = 0.0f;
     [SerializeField] private bool isMovement;
     [SerializeField] private bool isFloored;
-    [SerializeField] private float rayDistance = 0.6f; // Raycast length to check if player is grounded.
+    [SerializeField] private float rayDistance = 0.1f; // Raycast length to check if player is grounded.
     [SerializeField] private float jumpTime = 1;
     [SerializeField] private float jumpTimeCounter;
-    [SerializeField] private float jumpHeight = 10.0f;
+    [SerializeField] private float jumpHeight = 0.3f;
     [SerializeField] private bool isJumping;
     [SerializeField] private float gravity = 9.81f;
-    [SerializeField] private float gravityMultiplier = 5.0f;
+    [SerializeField] private float gravityMultiplier = 3.0f;
     [SerializeField] private float acceleration = 0.0f;
     [SerializeField] private float deceleration = 0.0f;
-    [SerializeField] private float jerkAcceleration = 50.0f;
-    [SerializeField] private float jerkDeceleration = 25.0f;
+    [SerializeField] private float jerkAcceleration = 500.0f;
+    [SerializeField] private float jerkDeceleration = 600.0f;
     [SerializeField] private float maxVelocity = 5.0f;
     [SerializeField] private CollisionFlags move;
 

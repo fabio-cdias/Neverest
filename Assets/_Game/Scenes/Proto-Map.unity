@@ -20587,11 +20587,11 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.83
+  m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.4
-  m_SkinWidth: 0.1
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &813518712 stripped
@@ -20638,11 +20638,11 @@ MonoBehaviour:
   jumpHeight: 0.3
   isJumping: 0
   gravity: 9.81
-  gravityMultiplier: 5
+  gravityMultiplier: 3
   acceleration: 0
   deceleration: 0
-  jerkAcceleration: 50
-  jerkDeceleration: 25
+  jerkAcceleration: 500
+  jerkDeceleration: 600
   maxVelocity: 5
   move: 0
 --- !u!114 &813518715
@@ -21181,7 +21181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7918460978371885258, guid: 3188c31c76af7ad458b352a9ac31660a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.0372257
+      value: 3.9913774
       objectReference: {fileID: 0}
     - target: {fileID: 7918460978371885258, guid: 3188c31c76af7ad458b352a9ac31660a, type: 3}
       propertyPath: m_LocalPosition.z
