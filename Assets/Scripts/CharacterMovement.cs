@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using KinematicCharacterController;
 using UnityEngine;
 
+
 public struct CharacterMovementInput
 {
     public Vector2 MoveInput;
@@ -14,10 +15,11 @@ public struct CharacterMovementInput
 public class CharacterMovement : MonoBehaviour, ICharacterController
 {
     private Animator animator;
-    
+    [HideInInspector] public StaminaController staminaController;
     void Start()
     {
         animator = GetComponent<Animator>();
+        staminaController = GetComponent<StaminaController>();
     }
     
     public KinematicCharacterMotor Motor;
