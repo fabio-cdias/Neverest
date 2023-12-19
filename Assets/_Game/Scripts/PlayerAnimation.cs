@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator animator;
-    private PlayerMovement player;
+    private Movement player;
     private float directionX;
     private float directionY;
     private int velocityHashX;
@@ -15,7 +15,7 @@ public class PlayerAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GetComponent<PlayerMovement>();
+        player = GetComponent<Movement>();
         animator = GetComponent<Animator>();
         velocityHashX = Animator.StringToHash("velocityX");
         velocityHashY = Animator.StringToHash("velocityY");
@@ -24,8 +24,10 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        animator.SetFloat(velocityHashX,player.horizontalVelocity.x);
-        animator.SetFloat(velocityHashY,player.horizontalVelocity.y);
+        animator.SetFloat(velocityHashX,player.velocity.x);
+        animator.SetFloat(velocityHashY,player.velocity.z);
+        
+        
         // // Forward  - Backwards
         // if (directionX == 0){
         //     if (directionY > 0){}
